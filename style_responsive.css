@@ -1,0 +1,44 @@
+/* ↔️ max-width + ↕️ max-height ================================================ */
+
+@media only screen and (max-height: 600px) {
+  body {
+    background-color: #ff00c8;
+  }
+ #mainText1 {
+  position: fixed;
+  bottom: 75px;
+  left: 50px;
+  rotate: -5deg;
+
+  font-family: 'variableFont';
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: 100;
+  line-height: 50px;
+  text-wrap: nowrap;
+
+	font-variation-settings: "wght" 400;
+  transition: rotate 1s ease-in-out, font-size 1s ease-in-out, font-variation-settings 1s ease-in-out;
+}
+#mainText2 {
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+
+  font-family: 'variableFont';
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-wrap: nowrap;
+  
+	font-variation-settings: "wght" 1000;
+  transition: font-size 1s ease-in-out, font-variation-settings 1s ease-in-out;
+}
+}
+#image {
+  position: fixed;
+  width: 300px;
+}
