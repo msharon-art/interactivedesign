@@ -2,15 +2,14 @@
 //✅ Main responsive logic
 //==============================================================
 function responsivePoster() {
-  if (window.matchMedia("(max-height: 500px)").matches) {
-
+  if (window.matchMedia("(max-height: 400px)").matches) {
   } 
   else if (window.matchMedia("(max-height: 600px)").matches) {
-    document.querySelector("#mainText2").innerHTML = "808 Commonwealth Ave <br> Room 410 or Zoom <br> Boston University Graphic Design";
+    document.querySelector("#mainText2").innerHTML = "808 Commonwealth Ave <br> Room 410 or Zoom <br> Boston University Graphic Design <br> https://xxx.tiri.xxx <br> https://morakana.com";
     document.querySelector("#mainText2").style.textAlign = "left";
     document.querySelector("#mainText2").style.bottom = "30px";
     document.querySelector("#mainText2").style.left = "30px";
-    document.querySelector("#image").src = "./img/tiri_oracle2.jpg";
+    document.querySelector("#image").src = "./img/tiri_oracle1.jpg";
     document.querySelector("#image").style.right = "30px";
   } 
   else { // ℹ️ Default
@@ -20,7 +19,7 @@ function responsivePoster() {
     document.querySelector("#image").src = "./img/tiri.jpeg";
     document.querySelector("#image").style.bottom = "30px";
     document.querySelector("#image").style.left = "50px";
-    document.querySelector("#image").style.rotate = "0deg";
+    // document.querySelector("#image").style.rotate = "0deg";
     // document.querySelector("#image").style.rotate = "-30deg";
   }
 }
@@ -33,11 +32,14 @@ function typeWriter() {
     textElement.textContent += text.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
+  } else {
+    // Typing finished → trigger fall
+    textElement.classList.add("fall");
   }
 }
 
 // Start the animation
-typeWriter();
+typeWriter(); 
 
 //==============================================================
 //❓Initial run + resize listener

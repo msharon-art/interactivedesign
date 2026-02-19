@@ -2,7 +2,7 @@
 
 @media only screen and (max-height: 600px) {
   body {
-    background-color: #ff00c8;
+    background-color: #ff0000;
   }
  #mainText1 {
   position: fixed;
@@ -23,7 +23,7 @@
 }
 #mainText2 {
   position: fixed;
-  bottom: 0;
+  top: 50px;
   left: 50px;
 
   font-family: 'variableFont';
@@ -39,6 +39,8 @@
 }
 }
 #image {
-  position: fixed;
+  position: absolute;
   width: 300px;
+  /* bottom: 30px;
+  right: 50px; */
 }

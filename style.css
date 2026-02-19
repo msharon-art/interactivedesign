@@ -46,8 +46,17 @@ body {
 
 	
   transition: rotate 1s ease-in-out, font-size 1s ease-in-out, font-variation-settings 1s ease-in-out;
+} 
+
+@keyframes fallDown {
+  to {
+    transform: translateY(150vh) rotate(15deg);
+  }
 }
 
+.fall {
+  animation: fallDown 1.2s ease-in forwards;
+}
 
 #mainText2 {
   position: fixed;
@@ -70,6 +79,6 @@ body {
 
 /* Image ================================================ */
 #image {
-  position: fixed;
+  position: absolute;
   width: 300px;
 }
